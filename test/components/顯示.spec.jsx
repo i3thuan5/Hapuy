@@ -9,18 +9,18 @@ let setup = (語句) => {
     );
   return {
     component: component,
-    div: component.find('div'),
+    span: component.find('span'),
   };
 };
 
 describe('Component', () => {
   describe('顯示', () => {
     it('should render Pangcah', () => {
-      const { component,div } = setup(
+      const { component,span } = setup(
       'Maolahay kako tiso wanan.'
       );
       expect(component.text()).match(/Maolahay kako tiso wanan\./);
-      expect(div.text()).match(/^Maolahay kako tiso wanan\./);
+      expect(span.text()).match(/^Maolahay kako tiso wanan\./);
     });
   });
 });
