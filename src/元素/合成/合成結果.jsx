@@ -21,7 +21,7 @@ export default class 合成結果 extends React.Component {
     let { 腔口, 語句 } = this.props;
     return (
         <span className='HuatIm'>
-          <audio ref="合成音檔">
+          <audio ref="合成音檔" autoPlay>
             <source type="audio/wav"
                src={後端合成網址(腔口, 語句)}/>
           </audio>
