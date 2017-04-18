@@ -6,7 +6,6 @@ let debug = Debug('hapuy:顯示');
 
 class 顯示 extends React.Component {
   render () {
-  	debug(this.props)
     let { 語句 } = this.props;
     return (
         <div className='main'>

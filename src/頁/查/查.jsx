@@ -12,7 +12,6 @@ export default class 查 extends React.Component {
   componentDidMount() {
     let { 語句, requestSearch } = this.props;
     requestSearch(語句);
-    // this.更新網址(語句);
   }
 
   送出 (e) {
@@ -38,7 +37,7 @@ export default class 查 extends React.Component {
           >查詢</button>
         </form>
         <br/>
-<合成結果/>
+        <合成結果/>
         <顯示/>
       </div>
     );
