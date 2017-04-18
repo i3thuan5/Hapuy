@@ -11,7 +11,7 @@ import 查 from './頁/查/查.container';
 import './app.css';
 import reducer from './reducers';
 
-Debug.enable('tau3:*');
+Debug.enable('hapuy:*');
 
 const root = document.getElementById('app');
 const middlewares = [thunk];

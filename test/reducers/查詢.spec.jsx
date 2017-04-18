@@ -1,4 +1,5 @@
 import { expect } from 'chai';
+import { TSHA5 } from '../../src/actions/action.type';
 import 查詢 from '../../src/reducers/查詢';
 
 describe('Reducer', () => {
@@ -14,7 +15,7 @@ describe('Reducer', () => {
 
   it('recognizes action IM1', ()=> {
     expect(查詢(undefined, {
-      type: 'huat4-im1',
+      type: TSHA5,
       語句: 'Maolahay kako tiso wanan.',
     }))
     .to

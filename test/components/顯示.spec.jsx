@@ -3,24 +3,24 @@ import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import 顯示 from '../../src/元素/顯示/顯示';
 
-let setup = (查詢結果={}) => {
+let setup = (語句) => {
   const component = shallow(
-    <顯示 選項={選項} 查詢結果={查詢結果}/>
+    <顯示 語句={語句}/>
     );
   return {
     component: component,
-    span: component.find('span'),
+    div: component.find('div'),
   };
 };
 
 describe('Component', () => {
   describe('顯示', () => {
     it('should render Pangcah', () => {
-      const { span } = setup(
-      {
-        '語句': 'Maolahay kako tiso wanan.'
-      });
-      expect(span.text()).match(/^Maolahay kako tiso wanan\./);
+      const { component,div } = setup(
+      'Maolahay kako tiso wanan.'
+      );
+      expect(component.text()).match(/Maolahay kako tiso wanan\./);
+      expect(div.text()).match(/^Maolahay kako tiso wanan\./);
     });
   });
 });

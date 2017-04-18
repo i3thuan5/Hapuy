@@ -1,3 +1,1 @@
-export const REQUEST_HANLO = 'REQUEST_HANLO';
-export const RECIEVE_HANLO = 'RECIEVE_HANLO';
-export const RECIEVE_ERROR_HANLO = 'RECIEVE_ERROR_HANLO';
+export const TSHA5 = "iluma'en";
