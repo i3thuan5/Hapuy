@@ -8,9 +8,9 @@ class 顯示 extends React.Component {
   render () {
     let { 語句 } = this.props;
     return (
-        <div className='main'>
+        <span>
           {語句}
-        </div>
+        </span>
       );
   }
 }

@@ -10,18 +10,6 @@ body {
   min-height: 100vh;
 }
 
-.app .container {
-  width: 960px;
-  margin: 0 auto;
-}
-
-.app .main.container {
-  display: flex;
-  flex-flow: row wrap;
-  flex-grow: 1;
-  align-content: flex-start;
-}
-
 .navigation {
   height: 50px;
   margin: 2em 0;
