@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Debug from 'debug';
-import 合成結果 from '../合成/合成結果';
 
 let debug = Debug('hapuy:顯示');
 
 class 顯示 extends React.Component {
   render () {
+  	debug(this.props)
     let { 語句 } = this.props;
     return (
         <div className='main'>

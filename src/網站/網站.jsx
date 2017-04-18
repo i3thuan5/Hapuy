@@ -17,7 +17,7 @@ export default class 網站 extends React.Component {
             React.cloneElement(
               this.props.children,
               {
-                語句: ku || '逐家tsò-hué來chhit4-tho5！',
+                語句: ku || 'Maolahay kako tiso wanan.',
               }
             )
           }

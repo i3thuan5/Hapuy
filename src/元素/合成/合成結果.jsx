@@ -1,8 +1,8 @@
 import React from 'react';
 import Debug from 'debug';
-import { 後端網址, 語音合成 } from '../../後端網址';
+import { 後端合成網址 } from '../../後端網址';
 
-var debug = Debug('tau3:合成結果');
+var debug = Debug('hapuy:合成結果');
 
 export default class 合成結果 extends React.Component {
 
@@ -18,11 +18,12 @@ export default class 合成結果 extends React.Component {
   }
 
   render () {
+    let {腔口,語句}=this.props;
     return (
         <span className='HuatIm'>
           <audio ref="合成音檔">
             <source type="audio/wav"
-               src={後端網址 + 語音合成 + this.props.語句}/>
+               src={後端合成網址(腔口,語句)}/>
           </audio>
           <button onClick={this.play.bind(this)}
             className='ui compact icon massive button'>
