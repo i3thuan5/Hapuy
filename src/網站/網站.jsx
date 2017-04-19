@@ -3,7 +3,7 @@ import 頁頭 from './頁頭';
 import 頁尾 from './頁尾';
 
 import Debug from 'debug';
-var debug = Debug('tau3:網站');
+var debug = Debug('hapuy:網站');
 
 export default class 網站 extends React.Component {
 
@@ -17,7 +17,7 @@ export default class 網站 extends React.Component {
             React.cloneElement(
               this.props.children,
               {
-                語句: ku || 'Maolahay kako tiso wanan.',
+                語句: ku || 'Maolahay kako tisowanan.',
               }
             )
           }
