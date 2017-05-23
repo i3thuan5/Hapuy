@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import 顯示 from './顯示';
 
 const matchStateToProps = (state) => ({
+  腔口: 'Pangcah',
   語句: state.查詢.語句,
 });
 

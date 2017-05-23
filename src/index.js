@@ -8,7 +8,6 @@ import createLogger from 'redux-logger';
 import Debug from 'debug';
 import 網站 from './網站/網站';
 import 查 from './頁/查';
-import './app.css';
 import reducer from './reducers';
 
 Debug.enable('hapuy:*');

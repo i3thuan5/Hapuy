@@ -23,7 +23,9 @@
     "url": "https://github.com/sih4sing5hong5/hapuy/issues"
   },
   "homepage": "http://xn--v0qr21b.xn--kpry57d/",
-  "dependencies": {},
+  "dependencies": {
+    "demo-ui": "^1.10.5"
+  },
   "devDependencies": {
     "babel-core": "^6.4.0",
     "babel-loader": "^6.2.1",
