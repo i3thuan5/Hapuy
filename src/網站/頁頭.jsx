@@ -1,9 +1,6 @@
 import React from 'react';
+import {Block} from 'demo-ui';
 
-export default class 頁頭 extends React.Component {
-  render () {
-    return (
-      <div className='app block'/>
-    );
-  }
-}
+頁頭 = () => (<Block/>);
+
+export default 頁頭;
