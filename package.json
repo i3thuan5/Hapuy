@@ -24,7 +24,7 @@
   },
   "homepage": "http://xn--v0qr21b.xn--kpry57d/",
   "dependencies": {
-    "demo-ui": "^1.9.5"
+    "demo-ui": "^1.10.5"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",
