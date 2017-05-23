@@ -1,5 +1,6 @@
 import React from 'react';
 import { browserHistory } from 'react-router';
+import {MainSection} from 'demo-ui';
 import Debug from 'debug';
 import 合成結果 from '../../元素/合成';
 import 顯示 from '../../元素/顯示';
@@ -29,7 +30,7 @@ export default class 查 extends React.Component {
   render () {
     let { 語句 } = this.props;
     return (
-      <div className='main container'>
+      <MainSection>
         <form onSubmit={this.送出.bind(this)}>
           <textarea defaultValue={語句} ref='tt' />
           <button className='ui huge primary right floated button'
@@ -39,7 +40,7 @@ export default class 查 extends React.Component {
         <br/>
         <合成結果/>
         <顯示/>
-      </div>
+      </MainSection>
     );
   }
 }
