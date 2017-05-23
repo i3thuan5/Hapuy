@@ -2,7 +2,6 @@ import React from 'react';
 import { browserHistory } from 'react-router';
 import {MainSection} from 'demo-ui';
 import Debug from 'debug';
-import 合成結果 from '../../元素/合成';
 import 顯示 from '../../元素/顯示';
 import './查.css';
 
@@ -31,14 +30,20 @@ export default class 查 extends React.Component {
     let { 語句 } = this.props;
     return (
       <MainSection>
-        <form onSubmit={this.送出.bind(this)}>
-          <textarea defaultValue={語句} ref='tt' />
+        <form className='ui form'
+          onSubmit={this.送出.bind(this)}>
+          
+          <div className="app block">
+          <textarea defaultValue={語句} ref='tt' rows='3'/>
+          </div>
+
+          <div className='app clearing'>
           <button className='ui huge primary right floated button'
             type='submit'
           >查詢</button>
+          </div>
         </form>
         <br/>
-        <合成結果/>
         <顯示/>
       </MainSection>
     );

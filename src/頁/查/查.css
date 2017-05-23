@@ -1,6 +1,16 @@
-.main{
-	margin:8px 0px;
+.ui.form {
+  margin-bottom: 1rem;
 }
-textarea{
-	width:100%;
+.ui.form textarea {
+  font-size: 1.5rem;
+  resize: none;
+}
+.ui.primary.button {
+  margin: 10px 0;
+}
+a.ui.button {
+  margin-right:13px;
+}
+a.ui.button {
+  margin-top:10px;
 }
