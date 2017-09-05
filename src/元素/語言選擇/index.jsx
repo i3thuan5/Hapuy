@@ -1,5 +1,5 @@
 const 語言選擇=()=>{
-	switch(window.location.hostname.split(',')[0]) {
+	switch(window.location.hostname.split('.')[0]) {
 	    case 'lamal':
 	        return 'Pangcah'
 	        break;
@@ -18,3 +18,4 @@ const 語言選擇=()=>{
 }
 
 export default 語言選擇;
+
