@@ -6,6 +6,12 @@ const 語言選擇=()=>{
 	    case 'hapoy':
 	        return 'SaySiyat'
 	        break;
+	    case 'sapuz':
+	        return 'Bunun'
+	        break;
+	    case 'puniq':
+	        return 'Atayal'
+	        break;
 	    default:
 	        return 'Pangcah'
 	} 
