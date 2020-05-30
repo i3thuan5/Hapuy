@@ -1,7 +1,6 @@
-FROM node:6 AS tsiantuan
+FROM node:10 AS tsiantuan
 WORKDIR /app
-COPY package.json .
-RUN npm i
+COPY package.json package-lock.json ./
+RUN npm ci
 COPY . .
-RUN npm start
-
+RUN npm run build
