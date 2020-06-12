@@ -1,8 +1,9 @@
 import { connect } from 'react-redux';
 import 顯示 from './顯示';
+import 語言選擇 from '../語言選擇'
 
 const matchStateToProps = (state) => ({
-  腔口: 'Pangcah',
+  腔口: 語言選擇(),
   語句: state.查詢.語句,
 });
 

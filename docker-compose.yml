@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  node-express:
+    build: ./
+    networks:
+      - default
+      - nginx-bridge
+    environment:
+       VIRTUAL_HOST: "lamal.ithuan.tw,hapoy.ithuan.tw,sapuz.ithuan.tw,puniq.ithuan.tw"
+       LETSENCRYPT_HOST: "lamal.ithuan.tw,hapoy.ithuan.tw,sapuz.ithuan.tw,puniq.ithuan.tw"
+       LETSENCRYPT_EMAIL: "ithuan@ithuan.tw"
+    restart: always
+
+networks:
+  nginx-bridge:
+    external: true
