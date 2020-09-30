@@ -11,8 +11,8 @@ const 頁尾 = () => {
     url: "https://github.com/i3thuan5/hapuy",
   },
   {
-    title: "意傳文化科技",
-    url: "https://xn--v0qr21b.xn--kpry57d/",
+    title: "意傳科技",
+    url: "https://ithuan.tw/",
   },
   {
     title: "語料來源",
