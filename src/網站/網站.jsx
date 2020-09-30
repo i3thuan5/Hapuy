@@ -3,6 +3,8 @@ import {Layout} from 'demo-ui';
 import 頁頭 from './頁頭';
 import 頁尾 from './頁尾';
 import Debug from 'debug';
+import {例句選擇} from '../元素/語言選擇'
+
 var debug = Debug('hapuy:網站');
 
 export default class 網站 extends React.Component {
@@ -17,7 +19,7 @@ export default class 網站 extends React.Component {
             React.cloneElement(
               this.props.children,
               {
-                語句: ku || 'Maolahay kako tisowanan.',
+                語句: ku || 例句選擇(),
               }
             )
           }
