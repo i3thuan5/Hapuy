@@ -32,7 +32,7 @@ export default class 查 extends React.Component {
     let { 語句 } = this.props;
     return (
       <MainSection>
-        <h2>{語言選擇()}</h2>
+        <h2>{語言選擇()} 語音合成工具</h2>
         <form className='ui form'
           onSubmit={this.送出.bind(this)}>
           
