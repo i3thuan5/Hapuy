@@ -3,6 +3,8 @@ import { browserHistory } from 'react-router';
 import {MainSection} from 'demo-ui';
 import Debug from 'debug';
 import 顯示 from '../../元素/顯示';
+import {語言選擇} from '../../元素/語言選擇'
+
 import './查.css';
 
 var debug = Debug('hapuy:查');
@@ -30,6 +32,7 @@ export default class 查 extends React.Component {
     let { 語句 } = this.props;
     return (
       <MainSection>
+        <h2>{語言選擇()}</h2>
         <form className='ui form'
           onSubmit={this.送出.bind(this)}>
           

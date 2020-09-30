@@ -3,7 +3,8 @@ import {Layout} from 'demo-ui';
 import 頁頭 from './頁頭';
 import 頁尾 from './頁尾';
 import Debug from 'debug';
-import {例句選擇} from '../元素/語言選擇'
+import {例句選擇, 語言選擇} from '../元素/語言選擇'
+
 
 var debug = Debug('hapuy:網站');
 

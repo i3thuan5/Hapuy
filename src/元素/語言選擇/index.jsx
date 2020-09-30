@@ -17,7 +17,7 @@ const 語言選擇=()=>{
 	} 
 }
 
-export default 語言選擇;
+export {語言選擇};
 
 
 const 例句選擇=()=>{
