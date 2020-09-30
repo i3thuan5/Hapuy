@@ -17,5 +17,26 @@ const 語言選擇=()=>{
 	} 
 }
 
-export default 語言選擇;
+export {語言選擇};
 
+
+const 例句選擇=()=>{
+	switch(window.location.hostname.split('.')[0]) {
+	    case 'lamal':
+	        return 'Maolahay kako tisowanan.'
+	        break;
+	    case 'hapoy':
+	        return 'So\'o kayzaeh ay?'
+	        break;
+	    case 'sapuz':
+	        return 'Mihumisan, uninang.'
+	        break;
+	    case 'puniq':
+	        return 'Lokah su ga?'
+	        break;
+	    default:
+	        return 'O Pangcah kako.'
+	}
+}
+
+export {例句選擇};
