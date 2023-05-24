@@ -7,8 +7,8 @@ services:
       - default
       - nginx-bridge
     environment:
-       VIRTUAL_HOST: "lamal.ithuan.tw,hapoy.ithuan.tw,sapuz.ithuan.tw,puniq.ithuan.tw"
-       LETSENCRYPT_HOST: "lamal.ithuan.tw,hapoy.ithuan.tw,sapuz.ithuan.tw,puniq.ithuan.tw"
+       VIRTUAL_HOST: ${VIRTUAL_HOST:lamal.ithuan.tw,hapoy.ithuan.tw,sapuz.ithuan.tw,puniq.ithuan.tw}
+       LETSENCRYPT_HOST: ${VIRTUAL_HOST:lamal.ithuan.tw,hapoy.ithuan.tw,sapuz.ithuan.tw,puniq.ithuan.tw}
        LETSENCRYPT_EMAIL: "ithuan@ithuan.tw"
     restart: always
 
