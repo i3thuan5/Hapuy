@@ -2,7 +2,7 @@ os: linux
 dist: jammy
 language: node_js
 node_js:
-  - node
+  - 16
 branches:
   only:
   - master
